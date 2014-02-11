@@ -37,12 +37,12 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="gbabase.null.210917937" name="gbabase"/>
+		<project id="gbademo.null.210917937" name="gbademo"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Default">
-			<resource resourceType="PROJECT" workspacePath="/gbabase"/>
+			<resource resourceType="PROJECT" workspacePath="/gbademo"/>
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration"/>
