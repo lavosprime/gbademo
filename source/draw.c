@@ -5,7 +5,8 @@
  * 	Color temp
  * 	int pal_index
  *
- * 	while (!start_button) {
+ * 	while (!start_button)
+ * 	{
  * 		if (!a_button)
  * 			vram[pos.y][pos.x] = temp
  *

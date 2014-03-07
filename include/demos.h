@@ -22,6 +22,6 @@ void demo7_main();
 void demo8_main();
 
 // a placeholder for unimplemented demos
-static inline void no_demo() {  }
+static inline void no_demo() {}
 
-#endif
+#endif // _demos_h

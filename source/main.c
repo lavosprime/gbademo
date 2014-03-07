@@ -2,42 +2,53 @@
 #include <gba_types.h>
 #include "demos.h"
 
-static inline void libgba_init(void) {
-	//TODO
+static inline void libgba_init(void)
+{
+    //TODO
 }
 
-static inline void main_init(void) {
-	//TODO
+static inline void main_init(void)
+{
+    //TODO
 }
 
 int main(void)
 {
-	libgba_init();
+    libgba_init();
 
-	int selection = 0;
-	bool needs_init = true;
-	const demo demos[NUM_DEMOS] = {	demo1_main, demo2_main,
-									demo3_main, demo4_main,
-									demo5_main, demo6_main,
-									demo7_main, demo8_main};
+    int selection = 0;
+    bool needs_init = true;
 
-	for(;;) {
-		if (needs_init) {
-			main_init();
-			needs_init = false;
-		}
+    // this is how the demo selection will be laid out on screen
+    const demo demos[NUM_DEMOS] =
+    {
+            demo1_main, demo2_main,
+            demo3_main, demo4_main,
+            demo5_main, demo6_main,
+            demo7_main, demo8_main
+    };
 
-		//TODO button logic
+    for (;;)
+    {
+        if (needs_init)
+        {
+            main_init();
+            needs_init = false;
+        }
 
-		if (0) {
-			demos[selection]();
-			needs_init = true;
-		}
+        //TODO button logic
 
-		//TODO wait for vblank
-	}
+        if (0)
+        {
+            demos[selection]();
+            needs_init = true;
+        }
 
-	return 0;	// never actually get here; undefined behavior on GBA
+        //TODO wait for vblank
+    }
+
+    // never actually get here; behavior after main returns is undefined on GBA
+    return 0;
 }
 
 // safety placeholders for unimplemented demos
