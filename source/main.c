@@ -49,7 +49,14 @@ int main(void)
             needs_init = false;
         }
 
-        //TODO button logic
+        u16 key_state = get_curr_keys();
+        int tribool_horz = tribool_dpad_horz(key_state);
+        int tribool_vert = tribool_dpad_vert(key_state);
+
+        int horz = (selection + tribool_horz) & 1;
+        int vert = (((selection >> 1) + tribool_vert) << 1) & (NUM_DEMOS - 1);
+
+        selection = horz + vert;
 
         if (0)
         {
