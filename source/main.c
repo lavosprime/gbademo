@@ -1,3 +1,15 @@
+//==============================================================================
+/*
+    Initialization and main program logic
+
+    Copyright 2014 by Cooper Johnson.
+
+    This program is free software provided under the terms of the MIT License.
+    It uses libgba, which is provided under the terms of the GNU LGPL v2 by the
+    devkitpro project (http://sourceforge.net/projects/devkitpro).
+*/
+//==============================================================================
+
 #include <gba.h>
 #include <gba_types.h>
 #include "demos.h"

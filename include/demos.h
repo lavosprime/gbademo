@@ -1,6 +1,14 @@
+//==============================================================================
 /*
- * Header file for linking the various demos into main
- */
+    Header file for linking the various demos into main
+
+    Copyright 2014 by Cooper Johnson.
+
+    This program is free software provided under the terms of the MIT License.
+    It uses libgba, which is provided under the terms of the GNU LGPL v2 by the
+    devkitpro project (http://sourceforge.net/projects/devkitpro).
+*/
+//==============================================================================
 
 #ifndef _demos_h
 #define _demos_h

@@ -1,3 +1,15 @@
+//==============================================================================
+/*
+    Demo implementation: a basic drawing toy
+
+    Copyright 2014 by Cooper Johnson.
+
+    This program is free software provided under the terms of the MIT License.
+    It uses libgba, which is provided under the terms of the GNU LGPL v2 by the
+    devkitpro project (http://sourceforge.net/projects/devkitpro).
+*/
+//==============================================================================
+
 /*
  * pseudocode for main loop; TODO larger brush than one pixel
  *
