@@ -1,6 +1,7 @@
 #include <gba.h>
 #include <gba_types.h>
 #include "demos.h"
+#include "input.h"
 
 static inline void libgba_init(void)
 {
