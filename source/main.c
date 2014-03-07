@@ -17,7 +17,8 @@
 
 static inline void libgba_init(void)
 {
-    //TODO
+    irqInit();
+    irqEnable(IRQ_VBLANK);
 }
 
 static inline void main_init(void)
@@ -41,7 +42,7 @@ int main(void)
             demo7_main, demo8_main
     };
 
-    for (;;)
+    for (;;)    // main loop; loop forever
     {
         if (needs_init)
         {
@@ -58,13 +59,13 @@ int main(void)
 
         selection = horz + vert;
 
-        if (0)
+        if (key_state & KEY_A)
         {
             demos[selection]();
             needs_init = true;
         }
 
-        //TODO wait for vblank
+        VBlankIntrWait();
     }
 
     // never actually get here; behavior after main returns is undefined on GBA
